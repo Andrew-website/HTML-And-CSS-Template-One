@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -41,6 +43,9 @@ header .container {
 header .container .logo img {
   width: 65px;
 }
+header .container nav {
+  position: relative;
+}
 header .container nav .list {
   display: flex;
   gap: 5px;
@@ -65,7 +70,6 @@ header .container nav .list:hover span {
 }
 header .container nav ul {
   display: none;
-  position: relative;
   z-index: 1000000000;
 }
 header .container nav ul li {
@@ -91,19 +95,19 @@ header .container nav .list:hover + ul {
   position: absolute;
   flex-direction: column;
   right: 15px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 200px;
   padding: 10px;
-  top: 50px;
+  top: 39px;
 }
 header .container nav ul::before {
   content: "";
-  top: -20px;
-  right: 10px;
+  top: -31px;
+  right: 5px;
   position: absolute;
-  border-width: 10px;
+  border-width: 16px;
   border-style: solid;
-  border-color: transparent transparent #eee transparent;
+  border-color: transparent transparent #f6f6f6 transparent;
 }
 /* End Header */
 /* Start BoxImg */
